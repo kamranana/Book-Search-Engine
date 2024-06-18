@@ -1,3 +1,5 @@
+Credits: Professors at CU, Google Search
+
 User Story
 AS AN avid reader
 I WANT to search for new books to read
