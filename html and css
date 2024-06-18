@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #000;
+        }
+        .sidebar .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .search-bar {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .results {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .book {
+            margin: 10px;
+            text-align: center;
+        }
+        .book img {
+            max-width: 100px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .book-title {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Announcements</a>
+        <a href="#">Modules</a>
+        <a href="#">Syllabus</a>
+        <a href="#">Grades</a>
+        <a href="#">Zoom</a>
+        <a href="#">Attendance</a>
+        <a href="#">Student Support</a>
+        <a href="#">Career Services</a>
+        <a href="#">Billing</a>
+        <a href="#">Xpert Learning Assistant</a>
+        <a href="#">Tutoring Sessions</a>
+    </div>
+    <div class="main-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a book">
+            <button>Submit Search</button>
+        </div>
+        <h2>Viewing 10 Results:</h2>
+        <div class="results">
+            <div class="book">
+                <img src="https://via.placeholder.com/100x150" alt="Star Wars Trilogy">
+                <div class="book-title">Star Wars Trilogy</div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/100x150" alt="The Military Science of Star Wars">
+                <div class="book-title">The Military Science of Star Wars</div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/100x150" alt="Star Wars">
+                <div class="book-title">Star Wars</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
